@@ -63,4 +63,7 @@ Brimir::Application.configure do
   config.active_support.deprecation = :notify
 
   config.eager_load = true
+
+  config.action_mailer.default_url_options = { :host => 'help.smellypuppy.com' }
+  config.action_mailer.default_options = { from: 'help@smellypuppy.com' }
 end
